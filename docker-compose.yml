@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  portfolio-web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: portfolio-container
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    volumes:
+      - ./src:/usr/share/nginx/html:ro
+    networks:
+      - portfolio-network
+
+networks:
+  portfolio-network:
+    driver: bridge
