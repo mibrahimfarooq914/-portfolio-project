@@ -1,0 +1,31 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (agar use karo)
+node_modules/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Docker volumes
+docker/volumes/
+
+# Environment files
+.env
+.env.local
+
+# Build files
+dist/
+build/
